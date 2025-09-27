@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Greg Babalicki, Web Developer in South Wales.">
+    <link rel="stylesheet" href="style.css">
+    <!-- skillset icons import -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Slick Slider stylesheet -->
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Greg Babalicki - Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon1.png">
+</head>
+<body>
+
+    <!-- Full-site-wrapper -->
+<div class="full-site-wrapper">
+
+<header>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <img src="img/favicon1.png" alt="Orange vector of glasses on blue background">
+            </div>
+            <div class="nav">
+                <ul id="nav">
+                    <li class="nav-item"><a href="#hej">Hej!</a></li>
+                    <li class="nav-item"><a href="#skillset">Skillset</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile navigation -->
+
+    <div class="nav-burger" aria-label="Open mobile navigation" role="button">
+        <div class="line-top"></div>
+        <div class="line-middle"></div>
+        <div class="line-bottom"></div>
+    </div>
+
+    <div class="mobile-nav-wrapper">
+        <div class="mobile-nav-flex">
+            <div class="mobile-nav">
+                <ul id="mobile-nav-list">
+                    <li class="mobile-nav-item"><a onclick="toggleMobileNav()" href="#hej">Hej!</a></li>
+                    <li class="mobile-nav-item"><a onclick="toggleMobileNav()" href="#skillset">Skillset</a></li>
+                    <li class="mobile-nav-item"><a onclick="toggleMobileNav()" href="#projects">Projects</a></li>
+                    <li class="mobile-nav-item"><a onclick="toggleMobileNav()" href="#about">About</a></li>
+                    <li class="mobile-nav-item"><a onclick="toggleMobileNav()" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+        <!-- Hero / Hej! section -->
+    <section id="hej">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="container-hej">
+                    <div class="left">
+                        <p id="p-hej">Hej!</p>
+                        <p id="im-greg">I'm Greg</p>
+                    </div>
+                    <div class="middle">
+                        <p id="im-greg">I'm Greg</p>
+                        <p id="greeting">Nice meeting you. I&apos;m a self-taught Web Developer based in South Wales. I thrive on lerning new technologies and love tackling challanges that push me to grow.</p>
+                        <p id="read-more"><a href="#about"><button type="button" class="button">Read More</button></a></p>
+                    </div>
+                    <div class="right">
+                        <img id="portrait" src="img/portrait1.png" alt="A vector portrait of Greg, wearing sunglasses and smiling.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Skillset section -->
+    <section id="skillset">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="container-skillset">
+                    <div class="skillset-heading">
+                        <p id="skillset-heading">See what I'm made of</p>
+                    </div>
+                    <div class="skillset-content">
+                        <!-- HTML Icon -->
+                        <div class="img"><i class="devicon-html5-plain-wordmark skillset-icon"></i></div>
+                        <!-- CSS Icon -->
+                        <div class="img"><i class="devicon-css3-plain-wordmark skillset-icon"></i></div>
+                        <!-- SASS Icon -->
+                        <div class="img"><i class="devicon-sass-original skillset-icon"></i></div>
+                        <!-- PHP Icon -->
+                        <div class="img"><i class="devicon-php-plain skillset-icon"></i></div>
+                        <!-- JavaScript Icon -->
+                        <div class="img"><i class="devicon-javascript-plain skillset-icon"></i></div>
+                        <!-- WrodPress Icon -->
+                        <div class="img"><i class="devicon-wordpress-plain-wordmark skillset-icon"></i></div>
+                        <!-- jQuery Icon -->
+                        <div class="img"><i class="devicon-jquery-plain-wordmark skillset-icon"></i></div>
+                        <!-- Bootstrap Icon -->
+                        <div class="img"><i class="devicon-bootstrap-plain-wordmark skillset-icon"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Projects section -->
+    <section id="projects">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="container-projects">
+                    <div class="projects-heading">
+                        <p id="projects-heading">How I use my skills</p>
+                    </div>
+                    <!-- Start of the slider -->
+                    <div class="content-slider">
+                        <!-- Slide 1 -->
+                         <div class="card">
+                            <div class="card-thumbnail">
+                                <img src="img/portfolio.png" alt="Screenshot of this portfolio website." class="thumbnail">
+                            </div>
+                            <div class="card-content">
+                                <div class="title">Portfolio</div>
+                                <div class="subtitle">Developement + Design</div>
+                                <div class="description">The website you are currently on. I have designed and developed it from scratch by myself.</div>
+                                <div class="card-skills">
+                                    <p class="skills">Skills</p>
+                                    <p class="skills-buttons">
+                                        <button class="skill">HTML</button>
+                                        <button class="skill">CSS</button>
+                                        <button class="skill">Sass</button>
+                                        <button class="skill">JavaScript</button>
+                                        <button class="skill">jQuery</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="card">
+                            <div class="card-thumbnail">
+                                <img src="img/mmmed.png" alt="Screenshot of the M.M.Med website." class="thumbnail">
+                            </div>
+                            <div class="card-content">
+                                <div class="title">M.M. Med</div>
+                                <div class="subtitle">Developement + Design</div>
+                                <div class="description">A custom build WordPress theme for a medical practice. Features relationships between services and doctors, tailored admin options and flexiable design for future updates.</div>
+                                <div class="card-skills">
+                                    <p class="skills">Skills</p>
+                                    <p class="skills-buttons">
+                                        <button class="skill">WordPress</button>
+                                        <button class="skill">HTML</button>
+                                        <button class="skill">CSS</button>
+                                        <button class="skill">Sass</button>
+                                        <button class="skill">PHP</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="card">
+                            <div class="card-thumbnail">
+                                <a href="https://kuickpharm.netlify.app/" target="_blank"><img src="img/KuickPharm.png" alt="Screenshot of the KuickPharm website." class="thumbnail"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="title">
+                                    <a href="https://kuickpharm.netlify.app/" target="_blank">KuickPharm</a>
+                                </div>
+                                <div class="subtitle">Developement</div>
+                                <div class="description">
+                                    Landing page for a pharmacy. Early pracitice developement project based on an exisitng website.
+                                </div>
+                                <div class="card-skills">
+                                    <p class="skills">Skills</p>
+                                    <p class="skills-buttons">
+                                        <button class="skill">HTML</button>
+                                        <button class="skill">CSS</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="card">
+                            <div class="card-thumbnail">
+                                <img src="img/currency-exchange.png" alt="Screenshot of the currency exchange project." class="thumbnail">
+                            </div>
+                            <div class="card-content">
+                                <div class="title">Currency Exchange</div>
+                                <div class="subtitle">Course work</div>
+                                <div class="description">Practice JavaScript project. Part of a JavaScript course with implementing an API.</div>
+                                <div class="card-skills">
+                                    <p class="skills">Skills</p>
+                                    <p class="skills-buttons">
+                                        <button class="skill">JavaScript</button>
+                                        <button class="skill">HTML</button>
+                                        <button class="skill">CSS</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- empty Slide template -->
+
+                        <!-- <div class="card">
+                            <div class="card-thumbnail">
+                                <img src="img/mmmed.png" alt="Screenshot of the M.M.Med website." class="thumbnail">
+                            </div>
+                            <div class="card-content">
+                                <div class="title">Slide 5</div>
+                                <div class="subtitle">subtitle</div>
+                                <div class="description">bla bla bla bla bla bla bla bla bla</div>
+                                <div class="card-skills">
+                                    <p class="skills">Skills</p>
+                                    <p class="skills-buttons">
+                                        <button class="skill">HTML</button>
+                                        <button class="skill">CSS</button>
+                                        <button class="skill">Sass</button>
+                                        <button class="skill">PHP</button>
+                                        <button class="skill">WordPress</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+        
+                    </div>
+                    <!-- Previoius arrow SVG -->
+                    <svg class="card-prev" xmlns="http://www.w3.org/2000/svg" width="30" height="100" viewBox="0 0 47 126">
+                    <text id="_" data-name="&lt;" transform="translate(0 96)" fill="#fdcd49" font-size="100" font-family="Caveat-Bold, Caveat" font-weight="700"><tspan x="0" y="0">&lt;</tspan></text>
+                    </svg>
+                    <!-- Next arrow SVG -->
+                     <svg class="card-next" xmlns="http://www.w3.org/2000/svg" width="30" height="100" viewBox="0 0 56 142">
+                    <text id="_" data-name="&gt;" transform="translate(0 108)" fill="#fdcd49" font-size="113" font-family="Caveat-Bold, Caveat" font-weight="700"><tspan x="0" y="0">&gt;</tspan></text>
+                    </svg>
+
+                    <!-- End of the slider --> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- About section -->
+    <section id="about">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="container-about">
+                    <div class="left">
+                        <img id="portrait" src="img/portrait1.png" alt="A vector portrait of Greg, wearing sunglasses and smiling.">
+                    </div>
+                    <div class="right">
+                        <div class="about-heading">
+                            <p id="about-heading">Let me introduce myself</p>
+                        </div>
+                        <div class="portrait-mobile">
+                            <img id="portrait-mobile" src="img/portrait1.png" alt="A vector portrait of Greg, wearing sunglasses and smiling.">
+                        </div>
+                        <div class="about-content">
+                            <p>
+                                Hej! My name is <span class="name">Greg Babalicki</span> and I&apos;m a self-taught Web Developer based in South Wales. I believe websites should feel as good as they look. For me, coding isn&apos;t just lines of logic - it&apos;s a way of turning ideas into experiences that people can interac with.
+                            </p>
+                            <p>
+                                I love experimenting with new tools, chasing those &quot;aha!&quot; moments when a problem finally click, and adding little creative topuches that make a project stand out. Weather I&apos;m building with HTML, CSS, JavaScript or WordPress,  my goal is always the same: create something functional, fun and memorable. And if it teaches me something new along the way, even better!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Contact section -->
+    <section id="contact">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="container-contact">
+                    <div class="top">
+                        <p id="contact-heading">Connect with me</p>
+                    </div>
+                    <div class="left">
+                        <div class="socials">
+                            <p>Find me on GitHub or connect via LinkedIn or e-mail.</p>
+
+                            <div class="social">
+                                <a href="https://github.com/gregba1">
+                                <div class="social-icon"><i class="devicon-github-original-wordmark"></i></i></div>
+                                <div class="social-slug">/&nbsp;gregba1</div>
+                                </a>
+                            </div>
+
+                            <div class="social">
+                                <a href="https://www.linkedin.com/in/greg-babalicki/">
+                                <div class="social-icon"><i class="devicon-linkedin-plain"></i></div>
+                                <div class="social-slug"> /&nbsp;greg-babalicki</div>
+                                </a>
+                            </div>
+                            
+                            <div class="social">
+                                <a href="mailto:g.babalicki@gmail.com">
+                                <div class="social-icon"><i class="devicon-blazor-original"></i></div>
+                                <div class="social-slug">/&nbsp;g.babalicki@gmail.com</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer">
+                        <!-- Copyright footer -->
+                            <p id="footer">&#169; <script>document.write(new Date().getFullYear())</script> Greg Babalicki. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                         <img id="pigeon" src="img/pigeon.png" alt="pigeon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of full-site-wrapper -->
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+
+<!-- JavaScript -->
+    <script>
+
+        // Mobile navigation on click animation
+
+        const navBurger = document.querySelector(".nav-burger");
+        const mobileNavBar = document.querySelector(".mobile-nav-wrapper");
+
+        function toggleMobileNav() {
+            navBurger.classList.toggle("nav-burger-toggle");
+            mobileNavBar.classList.toggle("mobile-nav-wrapper-toggle");
+        };
+
+        navBurger.addEventListener("click", toggleMobileNav);
+
+        // Scrollspy effect for navigation
+
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-item a, .mobile-nav-item a");
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+
+                        navLinks.forEach(link => link.classList.remove("active"));
+
+                        document.querySelectorAll(`a[href="#${id}"]`).forEach(link => {
+                            link.classList.add("active");
+                        });
+                    }
+                });
+            },
+            {
+                threshold:  0.6
+            }
+        );
+
+        sections.forEach(section => observer.observe(section));
+
+        // Skillset Icons change color on hover
+        const icons = document.querySelectorAll(".skillset-icon");
+        
+        icons.forEach(icon => {
+            icon.addEventListener("mouseenter", () => {
+                icon.classList.add("colored");
+            });
+
+            icon.addEventListener("mouseleave", () => {
+                icon.classList.remove("colored");
+            });
+        });
+    </script>
+
+    <!-- slick.js slider -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.content-slider').slick({
+                infinite: false,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                swipeToSlide: true,
+                variableWidth: true,
+                prevArrow: $('.card-prev'),
+                nextArrow: $('.card-next'),
+                responsive: [
+                    {
+                        breakpoint: 2000,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 1350,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+</html>

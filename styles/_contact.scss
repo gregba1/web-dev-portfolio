@@ -1,0 +1,97 @@
+.container-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .top {
+        width: 100%;
+        height: 20%;
+
+        @media (max-width: 800px) {
+            height: 15%;
+        }
+
+        #contact-heading {
+            font-family: 'Caveat';
+            font-size: 80pt;
+            margin: 0 3rem 0 0;
+            text-align: right;
+            color: $yellow;
+            transition: font-size $normalTransition;
+
+            @media (max-width: 800px) {
+                font-size: 40pt;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .left {
+        width: 60%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width: 800px) {
+            height: 85%;
+        }
+
+        .socials {
+
+            .social {
+                display: flex;
+                
+                a {
+                    display: flex;
+                    margin-bottom: 1rem;
+                    color: $magnolia;
+                    text-decoration: none;
+                    transition: color $normalTransition ease-in-out;
+
+                    &:hover {
+                        color: $orange;
+                    }
+
+                    .social-icon {
+                        font-size: 40pt;
+                        margin-right: 0.5rem;
+                    }
+
+                    .social-slug {
+                        align-content: center;
+                    }
+                }
+            }
+        }
+
+        .footer {
+
+            #footer {
+                font-size: 12pt;
+            }
+        }
+    }
+
+    .right {
+        align-content: flex-end;
+        width: 40%;
+        height: 80%;
+        position: relative;
+
+        @media (max-width: 800px) {
+            height: 85%;
+        }
+
+        #pigeon {
+            transform: scaleX(-1);
+            max-height: 100%;
+            max-width: 110%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.container-about {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .left {
+        width: 30%;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+        #portrait {
+            max-height: 100%;
+            max-width: 33vw;
+        }
+    }
+
+    .right {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+
+        .about-heading {
+            width: 100%;
+            max-height: 30%;
+            justify-content: flex-end;
+
+            @media (max-width: 800px) {
+                height: 20%;
+                width: 100%;
+            }
+
+            #about-heading {
+                font-family: 'Caveat';
+                font-size: 7vw;
+                text-wrap: nowrap;
+                color: $yellow;
+                margin: 1rem 0 0 0;
+                transform: rotate(5deg);
+                transition: font-size $shortTransition;
+                text-align: center;
+
+                @media (min-width: 1600px) {
+                    font-size: 80pt;
+                }
+
+                @media (max-width: 800px) {
+                    font-size: 40pt;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+
+        .portrait-mobile {
+            display: none;
+
+            @media (max-width: 800px) {
+                display: initial;
+                width: 100%;
+                text-align: center;
+            }
+
+            #portrait-mobile {
+                aspect-ratio: 1 / 1;
+                object-fit: contain;
+                max-width: 300px;
+                max-height: 300px;
+                border-radius: 50%;
+                transition: max-width $normalTransition,
+                            max-height $normalTransition;
+
+                @media (max-width: 600px) {
+                    max-width: 200px;
+                    max-height: 200px;
+                }
+            }
+        }
+
+        .about-content {
+            width: 70%;
+            max-height: 70%;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                height: 80%;
+            }
+
+            p {
+                padding: 0;
+                font-size: 18pt;
+                transition: font-size $shortTransition;
+
+                @media (max-width:2000px) {
+                    font-size: 14pt;
+                }
+
+                @media (max-width: 800px) {
+                    font-size: 12pt;
+                }
+
+                .name {
+                    font-family: 'Caveat';
+                    font-size: 30pt;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    transition: font-size $shortTransition;
+
+                    @media (max-width: 800px) {
+                        font-size: 25pt;
+                    }
+                }
+            }
+        }
+    }
+}

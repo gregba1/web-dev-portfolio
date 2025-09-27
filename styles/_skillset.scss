@@ -1,0 +1,66 @@
+.container-skillset {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .skillset-heading {
+        width: 100%;
+        height: 25%;
+        align-content: center;
+        justify-items: center;
+
+        #skillset-heading {
+        font-family: 'Caveat';
+        font-size: 80pt;
+        color: $yellow;
+        margin: 0;
+        text-wrap: nowrap;
+        transition: font-size $shortTransition ease-in-out;
+
+            @media (max-width: 800px) {
+                font-size: 40pt;
+            }
+        }
+    }
+
+    .skillset-content {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .img {
+            align-content: center;
+            height: 50%;
+            width: 25%;
+            text-align: center;
+
+            @media (max-width: 800px) {
+                height: 33%;
+                width: 33%;
+            }
+
+            .skillset-icon {
+                font-size: 100pt;
+                transition: color $longTransition,
+                            font-size $longTransition;
+
+                @media (max-width: 800px) {
+                    font-size: 50pt;
+                }
+
+                &:hover {
+                    font-size: 110pt;
+
+                    @media (max-width: 800px) {
+                        font-size: 60pt;
+                    }
+                }
+            }
+        }
+    }
+}

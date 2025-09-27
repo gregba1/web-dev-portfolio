@@ -1,0 +1,24 @@
+
+* {
+    scroll-behavior: smooth;
+} 
+
+body {
+    background-color: $blue;
+    font-family: 'Raleway';
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    font-size: 18pt;
+    color: $magnolia;
+    padding: 0;
+    margin: 0;
+
+    .full-site-wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}

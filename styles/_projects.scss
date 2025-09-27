@@ -1,0 +1,169 @@
+.container-projects {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+
+    .projects-heading {
+        width: 100%;
+        height: 20%;
+        align-content: center;
+
+        #projects-heading {
+        font-family: 'Caveat';
+        font-size: 80pt;
+        color: $yellow;
+        margin: 0;
+        transform: rotate(-5deg);
+        transition: font-size $shortTransition;
+
+            @media (max-width: 800px) {
+                font-size: 40pt;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .content-slider {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        margin: auto;
+        align-items: center;
+
+        .card {
+            width: 300px;
+            height: 480px;
+            color: $blue;
+            background-color: $magnolia;
+            border-radius: 20px;
+            box-shadow: 6px 6px 10px $yellow;
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            transition: box-shadow $normalTransition;
+            border: 1px solid $blue;
+
+            &:hover {
+                box-shadow: 6px 6px 10px $orange;
+            }
+
+            .card-thumbnail {
+                width: 280px;
+                height: 150px;
+                background-color: $gray;
+                border-radius: 15px 15px 0px 0px;
+                margin: 10px 10px 0px 10px;
+
+                .thumbnail {
+                    width: 280px;
+                    height: 150px;
+                    border-radius: 15px 15px 0px 0px;
+                    border: 1px solid $blue;
+                    object-fit: cover;
+                }
+            }
+
+            .card-content {
+                width: 280px;
+                height: 300px;
+                margin: 10px 10px 10px 10px;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: $orange;
+                    text-decoration: none;
+                }
+
+                .title {
+                    color: $orange;
+                    font-size: 20pt;
+                    margin: 0;
+                }
+
+                .subtitle {
+                    color: $gray;
+                    font-size: 12pt;
+                    margin: 0;
+                }
+
+                .description {
+                    font-size: 12pt;
+                    margin: 1em 0 0 0;
+                }
+
+                .card-skills {
+                    width: 280px;
+                    margin: 0;
+                    margin-top: auto;
+
+                    .skills {
+                        color: $gray;
+                        font-size: 14pt;
+                        font-weight: 500;
+                        margin: 15px 0 0 0;
+                    }
+
+                    .skills-buttons {
+                        margin: 0;
+
+                        .skill {
+                            font-family: 'Raleway';
+                            font-size: 12pt;
+                            font-weight: 500;
+                            margin-top: 0;
+                            background-color: $yellow;
+                            padding: 3px 5px;
+                            border: 1px solid $blue;
+                            border-radius: 8px;
+                            box-shadow: 1px 1px 3px 1px $blue;
+                            transition: background-color $normalTransition;
+
+                            &:hover {
+                                background-color: $orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .card-prev {
+        position: absolute;
+        left: 20px;
+        top: 45%;
+        transition: left $longTransition;
+        cursor: pointer;
+
+        @media (max-width: 1200px) {
+            left: 0;
+        }
+
+        @media (max-width: 800px) {
+            left: -15px;
+        }
+    }
+
+    .card-next {
+        position: absolute;
+        right: 20px;
+        top: 45%;
+        transition: right $longTransition;
+        cursor: pointer;
+
+        @media (max-width: 1200px) {
+            right: 0;
+        }
+
+        @media (max-width: 800px) {
+            right: -15px;
+        }
+    }
+}
