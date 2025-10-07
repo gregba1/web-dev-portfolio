@@ -19,6 +19,7 @@
         margin: 0;
         text-wrap: nowrap;
         transition: font-size $shortTransition ease-in-out;
+        text-align: center;
 
             @media (max-width: 800px) {
                 font-size: 40pt;

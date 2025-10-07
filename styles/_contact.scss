@@ -41,6 +41,10 @@
 
         .socials {
 
+        @media (max-width:400px) {
+                font-size: 12pt;
+            }
+
             .social {
                 display: flex;
                 
